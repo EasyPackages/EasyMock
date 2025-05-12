@@ -1,0 +1,33 @@
+{
+  "configurations" : [
+    {
+      "id" : "BE7EDDA2-8E17-4FB5-AD65-00FF912AA862",
+      "name" : "Test Scheme Action",
+      "options" : {
+        "testExecutionOrdering" : "random"
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:",
+          "identifier" : "EasyMock",
+          "name" : "EasyMock"
+        }
+      ]
+    },
+    "testExecutionOrdering" : "random"
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:",
+        "identifier" : "EasyMockTests",
+        "name" : "EasyMockTests"
+      }
+    }
+  ],
+  "version" : 1
+}
