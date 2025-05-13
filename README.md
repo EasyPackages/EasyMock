@@ -1,9 +1,10 @@
 # EasyMock
 
-**Simulate. Test. Verify.**  
-A lightweight and expressive library for unit testing in Swift — supporting `async/await`, delays, error simulation, and call tracking.
+[![Swift](https://github.com/EasyPackages/EasyMock/actions/workflows/swift.yml/badge.svg)](https://github.com/EasyPackages/EasyMock/actions/workflows/swift.yml)
 
----
+## Simulate. Test. Verify
+
+A lightweight and expressive library for unit testing in Swift — supporting `async/await`, delays, error simulation, and call tracking.
 
 ## Overview
 
@@ -18,8 +19,6 @@ It’s ideal for testing interactions, async flows, and error handling — witho
 - 🌀 Full `async/await` support
 - ❗ Error simulation (`throw`)
 - 🧪 Designed for clarity in unit tests
-
----
 
 ## Why Use EasyMock?
 
@@ -61,8 +60,6 @@ struct AuthenticatorMock: Authenticator {
 }
 ```
 
----
-
 ## Installation
 
 ### Using Swift Package Manager
@@ -86,19 +83,6 @@ In your target:
     dependencies: ["EasyMock"]
 )
 ```
-
----
-
-## Library Structure
-
-| Type               | Name                  | Purpose                                |
-|--------------------|-----------------------|----------------------------------------|
-| Mock               | `Mock`                | Basic sync mock                        |
-| AsyncMock          | `AsyncMock`           | Mock with `async/await`                |
-| ThrowableMock      | `ThrowableMock`       | Mock that can simulate thrown errors   |
-| AsyncThrowableMock | `AsyncThrowableMock`  | Full-featured async mock with error and delay support |
-
----
 
 ## Examples
 
@@ -144,15 +128,11 @@ let value = try await asyncMock.synchronize("ping")
 XCTAssertEqual(value, 42)
 ```
 
----
-
 ## Supported Platforms
 
 - iOS 13+
 - macOS 10.15+
 - Swift 5.9+
-
----
 
 ## Author
 

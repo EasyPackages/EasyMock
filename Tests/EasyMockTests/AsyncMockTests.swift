@@ -154,6 +154,7 @@ struct AsyncMockTests {
     @Test("should wait for the configured delay before completing")
     func testsynchronizeAppliesDelay() async {
         let delay = 0.2
+        let tolerance = 0.05
         let clock = ContinuousClock()
         let start = clock.now
         let sut = makeSut()
@@ -162,8 +163,13 @@ struct AsyncMockTests {
         await sut.synchronize("any-input")
 
         let duration = start.duration(to: clock.now)
-        #expect(duration >= .seconds(delay))
-        #expect(duration <= .seconds(delay + (delay * 0.1)))
+        let minimumExpected = delay
+        let maximumExpected = delay + tolerance
+
+        #expect(
+            duration >= .seconds(minimumExpected) && duration <= .seconds(maximumExpected),
+            "Duration (\(duration)) was not within the expected range (\(minimumExpected)s to \(maximumExpected)s)"
+        )
     }
     
     @Test("should not trigger observers when mocking delay")
