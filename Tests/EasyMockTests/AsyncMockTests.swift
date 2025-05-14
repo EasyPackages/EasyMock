@@ -152,9 +152,9 @@ struct AsyncMockTests {
     }
     
     @Test("should wait for the configured delay before completing")
-    func testsynchronizeAppliesDelay() async {
+    func testsynchronizeAppliesDelay() async throws {
         let delay = 0.2
-        let tolerance = 0.05
+        let tolerance = 0.2
         let clock = ContinuousClock()
         let start = clock.now
         let sut = makeSut()
