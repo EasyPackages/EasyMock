@@ -1,8 +1,8 @@
-# EasyMock
+![Banner](./doc-images/banner.jpg)
 
 [![Swift](https://github.com/EasyPackages/EasyMock/actions/workflows/swift.yml/badge.svg)](https://github.com/EasyPackages/EasyMock/actions/workflows/swift.yml)
 
-## Simulate. Test. Verify
+# Simulate. Test. Verify
 
 A lightweight and expressive library for unit testing in Swift — supporting `async/await`, delays, error simulation, and call tracking.
 
