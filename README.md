@@ -18,7 +18,7 @@ It’s ideal for testing interactions, async flows, and error handling — witho
 - ⏱ Simulated delays (like network latency)
 - 🌀 Full `async/await` support
 - ❗ Error simulation (`throw`)
-- 🧪 Designed for clarity in unit tests.
+- 🧪 Designed for clarity in unit tests
 
 ## Why Use EasyMock?
 
