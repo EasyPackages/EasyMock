@@ -8,7 +8,8 @@ A lightweight and expressive library for unit testing in Swift — supporting `a
 
 ## Overview
 
-**EasyMock** is a test utility designed for creating mock objects (test doubles) in Swift with minimal setup and maximum readability.  
+**EasyMock** is a test utility designed for creating mock objects (test doubles) in Swift with minimal setup and maximum readability. 
+
 It’s ideal for testing interactions, async flows, and error handling — without boilerplate.
 
 ### ✨ Features
@@ -18,7 +19,7 @@ It’s ideal for testing interactions, async flows, and error handling — witho
 - ⏱ Simulated delays (like network latency)
 - 🌀 Full `async/await` support
 - ❗ Error simulation (`throw`)
-- 🧪 Designed for clarity in unit tests.
+- 🧪 Designed for clarity in unit tests
 
 ## Why Use EasyMock?
 
