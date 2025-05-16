@@ -1,0 +1,11 @@
+name: Swift Package Manager
+
+on:
+  pull_request:
+    branches:
+      - main
+      - develop
+
+jobs:
+  use-reusable:
+    uses: EasyPackages/.github/.github/workflows/build_and_test_packages.yml@main
